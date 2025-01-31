@@ -13,7 +13,7 @@ export default function HomePage() {
     {
       title: 'Sorting Algorithms',
       algorithms: [
-        { name: 'Bubble Sort', path: '/bubble-sort' },
+        { name: 'Bubble Sort', path: '/algorithms/bubble-sort' },
         { name: 'Merge Sort', path: '/merge-sort' },
         { name: 'Quick Sort', path: '/quick-sort' },
       ],
@@ -21,8 +21,8 @@ export default function HomePage() {
     {
       title: 'Linked List Algorithms',
       algorithms: [
-        { name: 'Insert in Linked List', path: '/insert-linked-list' },
-        { name: 'Delete in Linked List', path: '/delete-linked-list' },
+        { name: 'Insert in Linked List', path: '/algorithms/insert-linked-list' },
+        { name: 'Delete in Linked List', path: '/algorithms/delete-linked-list' },
         { name: 'Reverse a Linked List', path: '/reverse-linked-list' },
       ],
     },
