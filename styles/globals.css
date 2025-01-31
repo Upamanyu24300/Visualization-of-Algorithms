@@ -2,20 +2,106 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+    :root {
+      --color-bg: #f3f4f6;
+      --color-text: #111827;
+    }
+    .dark {
+      --color-bg: #1f2937;
+      --color-text: #f3f4f6;
+    }
   }
+  
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+  }
+
+  .tabs {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .tab-link {
+    background-color: #E7EFC5;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s;
+  }
+  
+  .tab-link:hover {
+    background-color: #F2DDA4;
+  }
+  
+  .tab-link.active {
+    background-color: #03DAC6;
+    color: #121212;
+  }
+  
+  .dark-mode .tab-link {
+    background-color: #333333;
+    color: #E0E0E0;
+  }
+  
+  .dark-mode .tab-link:hover {
+    background-color: #444444;
+  }
+  
+  .dark-mode .tab-link.active {
+    background-color: #03DAC6;
+    color: #121212;
+  }
+
+  .tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.tab-link {
+  background-color: #E7EFC5;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s;
+}
+
+.tab-link:hover {
+  background-color: #F2DDA4;
+}
+
+.tab-link.active {
+  background-color: #03DAC6;
+  color: #121212;
+}
+
+.dark-mode .tab-link {
+  background-color: #333333;
+  color: #E0E0E0;
+}
+
+.dark-mode .tab-link:hover {
+  background-color: #444444;
+}
+
+.dark-mode .tab-link.active {
+  background-color: #03DAC6;
+  color: #121212;
+}
+
+pre {
+  background-color: #1e1e1e;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+}
+
+code {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.875rem;
 }
