@@ -53,8 +53,8 @@ export default function HomePage() {
     {
       title: 'Graph Algorithms',
       algorithms: [
-        { name: 'BFS Traversal', path: '/bfs' },
-        { name: 'DFS Traversal', path: '/dfs' },
+        { name: 'BFS Traversal', path: '/algorithms/bfs' },
+        { name: 'DFS Traversal', path: '/algorithms/dfs' },
         { name: "Dijkstra's Algorithm", path: '/dijkstra' },
       ],
     },

@@ -15,16 +15,16 @@ export default {
         category: '#BFD7B5',
         button: '#E7EFC5',
         dark: {
-          bg: "#181818",
-          text: "#D1D1D1",
-          sidebar: "#202020",
-          category: "#2C2C2C",
-          button: "#18A8D4",
-          buttonHover: "#5C00B0",
-          accent: "#9B66FF",
-          error: "#E53935",
-          success: "#1E88E5",
-          warning: "#FFEB3B"
+          bg: "#140F1A",
+          text: "#E5DCED",
+          sidebar: "#403C46",
+          category: "#524B59",
+          button: "#5C4065",
+          buttonHover: "#7A5A83",
+          accent: "#E5DCED",
+          error: "#D14C6B",
+          success: "#6BAA75",
+          warning: "#E0B567"
         },
         code: {
           bg: '#1e1e1e',
